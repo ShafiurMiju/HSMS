@@ -54,11 +54,29 @@
     <Compile Include="Class1.cs" />
     <Compile Include="DataAccessFactory.cs" />
     <Compile Include="EF\HSMSContext.cs" />
+    <Compile Include="EF\Models\AcamedicNotice.cs" />
     <Compile Include="EF\Models\Admin.cs" />
+    <Compile Include="EF\Models\ApplyStudent.cs" />
     <Compile Include="EF\Models\Class.cs" />
+    <Compile Include="EF\Models\ClassRoutine.cs" />
     <Compile Include="EF\Models\Department.cs" />
+    <Compile Include="EF\Models\Exam.cs" />
+    <Compile Include="EF\Models\ExamRoutine.cs" />
+    <Compile Include="EF\Models\ExamType.cs" />
+    <Compile Include="EF\Models\Grade.cs" />
+    <Compile Include="EF\Models\Guest.cs" />
+    <Compile Include="EF\Models\Message.cs" />
+    <Compile Include="EF\Models\Note.cs" />
+    <Compile Include="EF\Models\Notice.cs" />
+    <Compile Include="EF\Models\Result.cs" />
+    <Compile Include="EF\Models\SchoolInfo.cs" />
     <Compile Include="EF\Models\Section.cs" />
+    <Compile Include="EF\Models\Staff.cs" />
     <Compile Include="EF\Models\Student.cs" />
+    <Compile Include="EF\Models\Subject.cs" />
+    <Compile Include="EF\Models\SubjectTeacher.cs" />
+    <Compile Include="EF\Models\Teacher.cs" />
+    <Compile Include="EF\Models\TeacherStudentChat.cs" />
     <Compile Include="Interfaces\IAuth.cs" />
     <Compile Include="Interfaces\IRepo.cs" />
     <Compile Include="Migrations\202312291346289_DepartmentTableCreated.cs" />
@@ -108,6 +126,22 @@
     <Compile Include="Migrations\202312301950444_studentAdd.cs" />
     <Compile Include="Migrations\202312301950444_studentAdd.designer.cs">
       <DependentUpon>202312301950444_studentAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202312310056308_AllTableCreated.cs" />
+    <Compile Include="Migrations\202312310056308_AllTableCreated.designer.cs">
+      <DependentUpon>202312310056308_AllTableCreated.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202312310118435_AllTableCreatedRefresh.cs" />
+    <Compile Include="Migrations\202312310118435_AllTableCreatedRefresh.designer.cs">
+      <DependentUpon>202312310118435_AllTableCreatedRefresh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202312310120164_AllTableCreatedRefresh1.cs" />
+    <Compile Include="Migrations\202312310120164_AllTableCreatedRefresh1.designer.cs">
+      <DependentUpon>202312310120164_AllTableCreatedRefresh1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202312310121364_AllTableCreatedRefresh2.cs" />
+    <Compile Include="Migrations\202312310121364_AllTableCreatedRefresh2.designer.cs">
+      <DependentUpon>202312310121364_AllTableCreatedRefresh2.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -159,6 +193,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202312301950444_studentAdd.resx">
       <DependentUpon>202312301950444_studentAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202312310056308_AllTableCreated.resx">
+      <DependentUpon>202312310056308_AllTableCreated.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202312310118435_AllTableCreatedRefresh.resx">
+      <DependentUpon>202312310118435_AllTableCreatedRefresh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202312310120164_AllTableCreatedRefresh1.resx">
+      <DependentUpon>202312310120164_AllTableCreatedRefresh1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202312310121364_AllTableCreatedRefresh2.resx">
+      <DependentUpon>202312310121364_AllTableCreatedRefresh2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -23,3 +23,7 @@ D:\ASP.NET\HSMS(Backend)\DAL\obj\Debug\DAL.Migrations.AdminTableModified4.resour
 D:\ASP.NET\HSMS(Backend)\DAL\obj\Debug\DAL.Migrations.StudentTableCreated.resources
 D:\ASP.NET\HSMS(Backend)\DAL\obj\Debug\DAL.Migrations.StudentTableCreated1.resources
 D:\ASP.NET\HSMS(Backend)\DAL\obj\Debug\DAL.Migrations.studentAdd.resources
+D:\ASP.NET\HSMS(Backend)\DAL\obj\Debug\DAL.Migrations.AllTableCreated.resources
+D:\ASP.NET\HSMS(Backend)\DAL\obj\Debug\DAL.Migrations.AllTableCreatedRefresh.resources
+D:\ASP.NET\HSMS(Backend)\DAL\obj\Debug\DAL.Migrations.AllTableCreatedRefresh1.resources
+D:\ASP.NET\HSMS(Backend)\DAL\obj\Debug\DAL.Migrations.AllTableCreatedRefresh2.resources

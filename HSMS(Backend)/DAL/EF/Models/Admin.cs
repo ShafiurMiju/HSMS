@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
+using System.Runtime.Remoting.Messaging;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -41,5 +42,13 @@ namespace DAL.EF.Models
         [Required]
         [StringLength(200)]
         public string Address { get; set; }
+
+        public virtual ICollection<AcamedicNotice> AcamedicNotices { get; set;}
+        public virtual ICollection<Message> Messages { get; set; }
+        public Admin() 
+        {
+            AcamedicNotices = new List<AcamedicNotice>();
+            Messages = new List<Message>();
+        }
     }
 }

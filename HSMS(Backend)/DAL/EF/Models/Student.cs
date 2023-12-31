@@ -66,5 +66,14 @@ namespace DAL.EF.Models
 
         public virtual Class Class { get; set; }
         public virtual Section Section { get; set; }
+        public virtual ICollection<Result> Results { get; set; }
+        public virtual ICollection<TeacherStudentChat> TeacherStudentChats { get; set; }
+
+        public Student()
+        {
+            Results = new List<Result>();
+            TeacherStudentChats = new List<TeacherStudentChat>();
+        }
+
     }
 }

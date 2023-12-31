@@ -15,5 +15,12 @@ namespace DAL.EF.Models
         [Required]
         [StringLength(100)]
         public string DeptName { get; set; }
+
+        public virtual ICollection<Teacher> Teachers { get; set; }
+
+        public Department()
+        {
+            this.Teachers = new List<Teacher>();
+        }
     }
 }

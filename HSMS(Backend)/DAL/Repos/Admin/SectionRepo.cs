@@ -2,6 +2,7 @@
 using DAL.Interfaces;
 using System;
 using System.Collections.Generic;
+using System.Data.Common;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,7 +13,9 @@ namespace DAL.Repos
     {
         public bool Delete(int id)
         {
-            throw new NotImplementedException();
+            var ex = Get(id);
+            db.Sections.Remove(ex);
+            return db.SaveChanges() > 0;
         }
 
         public List<Section> Get()
@@ -22,7 +25,7 @@ namespace DAL.Repos
 
         public Section Get(int id)
         {
-            throw new NotImplementedException();
+            return db.Sections.Find(id);
         }
 
         public bool Post(Section obj)
@@ -33,7 +36,13 @@ namespace DAL.Repos
 
         public bool Update(Section obj)
         {
-            throw new NotImplementedException();
+            var ex = Get(obj.ID);
+
+            db.Entry(ex).CurrentValues.SetValues(obj);
+
+            return db.SaveChanges() > 0;
+
+
         }
     }
 }

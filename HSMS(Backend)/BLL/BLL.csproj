@@ -50,6 +50,7 @@
     <Compile Include="DTOs\DepartmentDTO.cs" />
     <Compile Include="DTOs\LoginDTO.cs" />
     <Compile Include="DTOs\SectionDTO.cs" />
+    <Compile Include="DTOs\SectionStudentDTO.cs" />
     <Compile Include="DTOs\StudentDTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\Admin\AdminService.cs" />
