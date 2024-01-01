@@ -99,6 +99,7 @@
     <Compile Include="Controllers\Admin\DepartmentController.cs" />
     <Compile Include="Controllers\Admin\SectionController.cs" />
     <Compile Include="Controllers\Admin\StudentController.cs" />
+    <Compile Include="Controllers\Student\StudentController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
