@@ -45,16 +45,33 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="DTOs\AcademicNoticeDTO.cs" />
     <Compile Include="DTOs\AdminDTO.cs" />
+    <Compile Include="DTOs\ApplyStudentDTO.cs" />
     <Compile Include="DTOs\ClassDTO.cs" />
+    <Compile Include="DTOs\ClassRoutineDTO.cs" />
     <Compile Include="DTOs\DepartmentDTO.cs" />
+    <Compile Include="DTOs\ExamDTO.cs" />
+    <Compile Include="DTOs\ExamRoutineDTO.cs" />
+    <Compile Include="DTOs\ExamTypeDTO.cs" />
+    <Compile Include="DTOs\GradeDTO.cs" />
+    <Compile Include="DTOs\GuestDTO.cs" />
     <Compile Include="DTOs\LoginDTO.cs" />
+    <Compile Include="DTOs\MessageDTO.cs" />
+    <Compile Include="DTOs\NoteDTO.cs" />
+    <Compile Include="DTOs\NoticeDTO.cs" />
+    <Compile Include="DTOs\ResultDTO.cs" />
+    <Compile Include="DTOs\SchoolInfoDTO.cs" />
     <Compile Include="DTOs\SectionDTO.cs" />
     <Compile Include="DTOs\ClassStudentDTO.cs" />
     <Compile Include="DTOs\DepartmentTeacherDTO.cs" />
     <Compile Include="DTOs\SectionStudentDTO.cs" />
+    <Compile Include="DTOs\StaffDTO.cs" />
     <Compile Include="DTOs\StudentDTO.cs" />
+    <Compile Include="DTOs\SubjectDTO.cs" />
+    <Compile Include="DTOs\SubjectTeacherDTO.cs" />
     <Compile Include="DTOs\TeacherDTO.cs" />
+    <Compile Include="DTOs\TeacherStudentDTO.cs" />
     <Compile Include="DTOs\TokenDTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\Admin\AdminService.cs" />
