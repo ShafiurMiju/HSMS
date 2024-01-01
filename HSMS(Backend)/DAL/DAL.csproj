@@ -81,6 +81,10 @@
     <Compile Include="Interfaces\IAdmin.cs" />
     <Compile Include="Interfaces\IAuth.cs" />
     <Compile Include="Interfaces\IRepo.cs" />
+    <Compile Include="Migrations\202401011810303_TableCreate.cs" />
+    <Compile Include="Migrations\202401011810303_TableCreate.designer.cs">
+      <DependentUpon>202401011810303_TableCreate.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repos\Admin\AdminRepo.cs" />
@@ -95,7 +99,11 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202401011810303_TableCreate.resx">
+      <DependentUpon>202401011810303_TableCreate.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
