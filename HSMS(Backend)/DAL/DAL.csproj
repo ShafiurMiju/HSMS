@@ -87,14 +87,16 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repos\Admin\AdminRepo.cs" />
-    <Compile Include="Repos\Admin\ClassRepo.cs" />
-    <Compile Include="Repos\Admin\DepartmentRepo.cs" />
-    <Compile Include="Repos\Admin\TokenRepo.cs" />
+    <Compile Include="Repos\ReposAdmin\AdminRepo.cs" />
+    <Compile Include="Repos\ReposAdmin\ClassRepo.cs" />
+    <Compile Include="Repos\ReposAdmin\DepartmentRepo.cs" />
+    <Compile Include="Repos\ReposAdmin\StudentDTO.cs" />
+    <Compile Include="Repos\ReposAdmin\TeacherRepo.cs" />
+    <Compile Include="Repos\ReposAdmin\TokenRepo.cs" />
     <Compile Include="Repos\Repo.cs" />
-    <Compile Include="Repos\Admin\SectionRepo.cs" />
-    <Compile Include="Repos\Admin\StudentRepo.cs" />
-    <Compile Include="Repos\Student\StudentRepo.cs" />
+    <Compile Include="Repos\ReposAdmin\SectionRepo.cs" />
+    <Compile Include="Repos\ReposAdmin\StudentRepo.cs" />
+    <Compile Include="Repos\RepoStudent\StudentRepo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

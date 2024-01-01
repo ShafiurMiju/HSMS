@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BLL.Services.Student
+namespace DAL.Repos.RepoStudent
 {
-    public class StudentService
+    internal class StudentRepo
     {
     }
 }
