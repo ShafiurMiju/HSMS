@@ -1,6 +1,7 @@
 ﻿using DAL.EF.Models;
 using DAL.Interfaces;
 using DAL.Repos;
+using DAL.Repos.Admin;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,12 +17,12 @@ namespace DAL
             return new DepartmentRepo();
         }
         
-        public static IRepo<Admin, int, bool> AdminData()
+        public static IAdmin AdminData()
         {
             return new AdminRepo();
         }
 
-        public static IAuth AuthData()
+        public static IAuth <bool> AuthData()
         {
             return new AdminRepo();
         }
@@ -39,6 +40,11 @@ namespace DAL
         public static IRepo<Student, int, bool> StudentData()
         {
             return new StudentRepo();
+        }
+
+        public static IRepo<Token, string, Token> TokenData()
+        {
+            return new TokenRepo();
         }
     }
 }

@@ -47,6 +47,25 @@
                 });
             }*/
 
+            /*for (int i = 1; i <= 10; i++)
+            {
+                context.Teachers.AddOrUpdate(new EF.Models.Teacher
+                {
+                        ID = i,
+                        FirstName = $"Teacher{i}",
+                        LastName = "Doe",
+                        Email = $"teacher{i}@example.com",
+                        ContactNumber = "1234567890",
+                        DateOfBirth = DateTime.Now.AddYears(-35).AddMonths(i),
+                        Gender = "Male",
+                        Education = $"Ph.D. in Subject{i}",
+                        Password = "password123",
+                        ProfilePicture = $"profile{i}.jpg",
+                        DepartmentID = 1 // You may need to adjust the department ID
+                    }
+                );
+            }*/
+
         }
     }
 }

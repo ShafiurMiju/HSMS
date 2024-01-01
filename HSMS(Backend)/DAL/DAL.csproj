@@ -77,6 +77,8 @@
     <Compile Include="EF\Models\SubjectTeacher.cs" />
     <Compile Include="EF\Models\Teacher.cs" />
     <Compile Include="EF\Models\TeacherStudentChat.cs" />
+    <Compile Include="EF\Models\Token.cs" />
+    <Compile Include="Interfaces\IAdmin.cs" />
     <Compile Include="Interfaces\IAuth.cs" />
     <Compile Include="Interfaces\IRepo.cs" />
     <Compile Include="Migrations\202312291346289_DepartmentTableCreated.cs" />
@@ -143,11 +145,20 @@
     <Compile Include="Migrations\202312310121364_AllTableCreatedRefresh2.designer.cs">
       <DependentUpon>202312310121364_AllTableCreatedRefresh2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202312312046045_TeacherInfoAdd.cs" />
+    <Compile Include="Migrations\202312312046045_TeacherInfoAdd.designer.cs">
+      <DependentUpon>202312312046045_TeacherInfoAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202312312224114_TokenTableCreated.cs" />
+    <Compile Include="Migrations\202312312224114_TokenTableCreated.designer.cs">
+      <DependentUpon>202312312224114_TokenTableCreated.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repos\Admin\AdminRepo.cs" />
     <Compile Include="Repos\Admin\ClassRepo.cs" />
     <Compile Include="Repos\Admin\DepartmentRepo.cs" />
+    <Compile Include="Repos\Admin\TokenRepo.cs" />
     <Compile Include="Repos\Repo.cs" />
     <Compile Include="Repos\Admin\SectionRepo.cs" />
     <Compile Include="Repos\Admin\StudentRepo.cs" />
@@ -205,6 +216,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202312310121364_AllTableCreatedRefresh2.resx">
       <DependentUpon>202312310121364_AllTableCreatedRefresh2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202312312046045_TeacherInfoAdd.resx">
+      <DependentUpon>202312312046045_TeacherInfoAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202312312224114_TokenTableCreated.resx">
+      <DependentUpon>202312312224114_TokenTableCreated.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

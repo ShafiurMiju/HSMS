@@ -33,6 +33,7 @@ namespace DAL.EF
         public DbSet<SubjectTeacher> SubjectTeachers { get; set; }        
         public DbSet<Teacher> Teachers { get; set; }        
         public DbSet<TeacherStudentChat> TeacherStudentChats { get; set; }        
+        public DbSet<Token> Tokens { get; set; }        
         
     }
 }

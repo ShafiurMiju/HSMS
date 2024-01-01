@@ -50,10 +50,15 @@
     <Compile Include="DTOs\DepartmentDTO.cs" />
     <Compile Include="DTOs\LoginDTO.cs" />
     <Compile Include="DTOs\SectionDTO.cs" />
+    <Compile Include="DTOs\ClassStudentDTO.cs" />
+    <Compile Include="DTOs\DepartmentTeacherDTO.cs" />
     <Compile Include="DTOs\SectionStudentDTO.cs" />
     <Compile Include="DTOs\StudentDTO.cs" />
+    <Compile Include="DTOs\TeacherDTO.cs" />
+    <Compile Include="DTOs\TokenDTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\Admin\AdminService.cs" />
+    <Compile Include="Services\Admin\AuthService.cs" />
     <Compile Include="Services\Admin\ClassService.cs" />
     <Compile Include="Services\Admin\DepartmentService.cs" />
     <Compile Include="Services\Admin\SectionService.cs" />

@@ -1,4 +1,5 @@
-﻿using BLL.DTOs;
+﻿using AL.Auth;
+using BLL.DTOs;
 using BLL.Services;
 using System;
 using System.Collections.Generic;
@@ -12,31 +13,14 @@ namespace AL.Controllers
 {
     public class AdminController : ApiController
     {
-        [HttpPost]
-        [Route("api/login")]
-        public HttpResponseMessage Login(LoginDTO login)
-        {
-            var Email = login.Email;
-            var Password = login.Password;
-
-            try
-            {
-                var data = AdminService.Login(Email, Password);
-                return Request.CreateResponse(HttpStatusCode.OK, data);
-            }
-            catch (Exception ex)
-            {
-                return Request.CreateErrorResponse(HttpStatusCode.InternalServerError, ex.Message);
-            }
-        }
-
+        [Logged]
         [HttpGet]
-        [Route("api/admin")]
-        public HttpResponseMessage Get()
+        [Route("api/admin/{id}/profile")]
+        public HttpResponseMessage Get(int id)
         {
             try
             {
-                var data = AdminService.Get();
+                var data = AdminService.Get(id);
                 return Request.CreateResponse(HttpStatusCode.OK, data);
             }
             catch (Exception ex)

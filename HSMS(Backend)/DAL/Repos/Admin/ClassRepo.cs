@@ -12,7 +12,9 @@ namespace DAL.Repos
     {
         public bool Delete(int id)
         {
-            throw new NotImplementedException();
+            var ex = Get(id);
+            db.Classes.Remove(ex);
+            return db.SaveChanges() > 0;
         }
 
         public List<Class> Get()
@@ -22,7 +24,7 @@ namespace DAL.Repos
 
         public Class Get(int id)
         {
-            throw new NotImplementedException();
+            return db.Classes.Find(id);
         }
 
         public bool Post(Class obj)
@@ -33,7 +35,11 @@ namespace DAL.Repos
 
         public bool Update(Class obj)
         {
-            throw new NotImplementedException();
+            var ex = Get(obj.ID);
+
+            db.Entry(ex).CurrentValues.SetValues(obj);
+
+            return db.SaveChanges() > 0;
         }
     }
 }

@@ -13,24 +13,18 @@ namespace BLL.Services
 {
     public class AdminService
     {
-        public static bool Login(string Email, string Password)
+        public static AdminDTO Get(int id)
         {
-            return DataAccessFactory.AuthData().Auth(Email, Password);           
-        }
-
-        public static List<AdminDTO> Get()
-        {
-
-            var data = DataAccessFactory.AdminData().Get();
+            var data = DataAccessFactory.AdminData().Get(id);
 
             var confiq = new MapperConfiguration(cfg =>
             {
-                cfg.CreateMap<Admin,AdminDTO>();
+                cfg.CreateMap<DAL.EF.Models.Admin, AdminDTO>();
             });
 
             var mapper = new Mapper(confiq);
 
-            return mapper.Map<List<AdminDTO>>(data);
+            return mapper.Map<AdminDTO>(data);
         }
     }
 }

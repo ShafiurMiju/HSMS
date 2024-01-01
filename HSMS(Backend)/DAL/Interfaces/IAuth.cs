@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace DAL.Interfaces
 {
-    public interface IAuth
+    public interface IAuth<RET>
     {
-        bool Auth(string Email, string Password);
+        RET Auth(string Email, string Password);
     }
 }

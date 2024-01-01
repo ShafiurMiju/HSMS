@@ -27,3 +27,5 @@ D:\ASP.NET\HSMS(Backend)\DAL\obj\Debug\DAL.Migrations.AllTableCreated.resources
 D:\ASP.NET\HSMS(Backend)\DAL\obj\Debug\DAL.Migrations.AllTableCreatedRefresh.resources
 D:\ASP.NET\HSMS(Backend)\DAL\obj\Debug\DAL.Migrations.AllTableCreatedRefresh1.resources
 D:\ASP.NET\HSMS(Backend)\DAL\obj\Debug\DAL.Migrations.AllTableCreatedRefresh2.resources
+D:\ASP.NET\HSMS(Backend)\DAL\obj\Debug\DAL.Migrations.TeacherInfoAdd.resources
+D:\ASP.NET\HSMS(Backend)\DAL\obj\Debug\DAL.Migrations.TokenTableCreated.resources

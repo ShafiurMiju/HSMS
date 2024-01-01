@@ -18,7 +18,7 @@ namespace DAL.Repos
 
         public Department Get(int id)
         {
-            throw new NotImplementedException();
+            return db.Departments.Find(id);
         }
 
         public bool Post(Department obj)
@@ -29,12 +29,18 @@ namespace DAL.Repos
 
         public bool Update(Department obj)
         {
-            throw new NotImplementedException();
+            var ex = Get(obj.ID);
+
+            db.Entry(ex).CurrentValues.SetValues(obj);
+
+            return db.SaveChanges() > 0;
         }
 
         public bool Delete(int id)
         {
-            throw new NotImplementedException();
+            var ex = Get(id);
+            db.Departments.Remove(ex);
+            return db.SaveChanges() > 0;
         }
     }
 }

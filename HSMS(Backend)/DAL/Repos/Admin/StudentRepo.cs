@@ -13,7 +13,16 @@ namespace DAL.Repos
     {
         public bool Delete(int id)
         {
-            throw new NotImplementedException();
+            var ex = DataAccessFactory.StudentData().Get(id);
+
+            db.Students.Remove(ex);
+
+            if (db.SaveChanges() > 0)
+            {
+                return true;
+            }
+
+            return false;
         }
 
         public List<Student> Get()
@@ -28,12 +37,21 @@ namespace DAL.Repos
 
         public bool Post(Student obj)
         {
-            throw new NotImplementedException();
+            db.Students.Add(obj);
+            if(db.SaveChanges() > 0)return true;
+            return false;
         }
 
         public bool Update(Student obj)
         {
-            throw new NotImplementedException();
+            var ex = DataAccessFactory.StudentData().Get(obj.ID);
+
+            db.Entry(ex).CurrentValues.SetValues(obj);
+
+            if (db.SaveChanges() > 0){
+                return true;
+            }
+            return false;
         }
     }
 }

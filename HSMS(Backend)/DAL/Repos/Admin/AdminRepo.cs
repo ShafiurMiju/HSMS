@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace DAL.Repos
 {
-    internal class AdminRepo : Repo, IRepo<Admin, int, bool>, IAuth
+    internal class AdminRepo : Repo, IAdmin, IAuth<bool>
     {
         public bool Auth(string Email, string Password)
         {
@@ -18,29 +18,14 @@ namespace DAL.Repos
             return false;
         }
 
-        public bool Delete(int id)
+        EF.Models.Admin IAdmin.Get(int id)
         {
-            throw new NotImplementedException();
+            return db.Admins.Find(id);
         }
 
-        public List<Admin> Get()
+        EF.Models.Admin IAdmin.Get(string email)
         {
-            return db.Admins.ToList();
-        }
-
-        public Admin Get(int id)
-        {
-            throw new NotImplementedException();
-        }
-
-        public bool Post(Admin obj)
-        {
-            throw new NotImplementedException();
-        }
-
-        public bool Update(Admin obj)
-        {
-            throw new NotImplementedException();
+            return db.Admins.FirstOrDefault(admin => admin.Email.Equals(email));
         }
     }
 }

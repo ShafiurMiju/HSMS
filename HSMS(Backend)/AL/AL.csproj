@@ -92,7 +92,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Auth\Logged.cs" />
     <Compile Include="Controllers\Admin\AdminController.cs" />
+    <Compile Include="Controllers\Admin\AuthController.cs" />
     <Compile Include="Controllers\Admin\ClassController.cs" />
     <Compile Include="Controllers\Admin\DepartmentController.cs" />
     <Compile Include="Controllers\Admin\SectionController.cs" />

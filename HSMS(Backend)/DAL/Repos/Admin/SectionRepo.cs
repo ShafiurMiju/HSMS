@@ -41,8 +41,6 @@ namespace DAL.Repos
             db.Entry(ex).CurrentValues.SetValues(obj);
 
             return db.SaveChanges() > 0;
-
-
         }
     }
 }
