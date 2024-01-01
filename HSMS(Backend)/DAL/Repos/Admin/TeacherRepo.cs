@@ -30,9 +30,5 @@ namespace DAL.Repos.Admin
             throw new NotImplementedException();
         }
 
-        public bool Update(Teacher obj)
-        {
-            throw new NotImplementedException();
-        }
     }
 }
