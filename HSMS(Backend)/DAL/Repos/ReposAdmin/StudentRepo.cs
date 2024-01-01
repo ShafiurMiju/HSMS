@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace DAL.Repos
 {
     internal class StudentRepo : Repo, IRepo<Student, int, bool>
@@ -27,7 +28,7 @@ namespace DAL.Repos
 
         public List<Student> Get()
         {
-            return db.Students.ToList();    
+            return db.Students.ToList();
         }
 
         public Student Get(int id)
