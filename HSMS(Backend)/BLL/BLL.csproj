@@ -74,13 +74,13 @@
     <Compile Include="DTOs\TeacherStudentDTO.cs" />
     <Compile Include="DTOs\TokenDTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Services\Admin\AdminService.cs" />
-    <Compile Include="Services\Admin\AuthService.cs" />
-    <Compile Include="Services\Admin\ClassService.cs" />
-    <Compile Include="Services\Admin\DepartmentService.cs" />
-    <Compile Include="Services\Admin\SectionService.cs" />
-    <Compile Include="Services\Admin\StudentService.cs" />
-    <Compile Include="Services\Student\StudentService.cs" />
+    <Compile Include="Services\ServiceAdmin\AdminService.cs" />
+    <Compile Include="Services\ServiceAdmin\AuthService.cs" />
+    <Compile Include="Services\ServiceAdmin\ClassService.cs" />
+    <Compile Include="Services\ServiceAdmin\DepartmentService.cs" />
+    <Compile Include="Services\ServiceAdmin\SectionService.cs" />
+    <Compile Include="Services\ServiceAdmin\StudentService.cs" />
+    <Compile Include="Services\ServiceStudent\StudentService.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DAL\DAL.csproj">

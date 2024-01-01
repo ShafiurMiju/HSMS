@@ -93,13 +93,13 @@
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Auth\Logged.cs" />
-    <Compile Include="Controllers\Admin\AdminController.cs" />
-    <Compile Include="Controllers\Admin\AuthController.cs" />
-    <Compile Include="Controllers\Admin\ClassController.cs" />
-    <Compile Include="Controllers\Admin\DepartmentController.cs" />
-    <Compile Include="Controllers\Admin\SectionController.cs" />
-    <Compile Include="Controllers\Admin\StudentController.cs" />
-    <Compile Include="Controllers\Student\StudentController.cs" />
+    <Compile Include="Controllers\ControllerAdmin\AdminController.cs" />
+    <Compile Include="Controllers\ControllerAdmin\AuthController.cs" />
+    <Compile Include="Controllers\ControllerAdmin\ClassController.cs" />
+    <Compile Include="Controllers\ControllerAdmin\DepartmentController.cs" />
+    <Compile Include="Controllers\ControllerAdmin\SectionController.cs" />
+    <Compile Include="Controllers\ControllerAdmin\StudentController.cs" />
+    <Compile Include="Controllers\ControllerStudent\StudentController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
