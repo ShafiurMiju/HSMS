@@ -80,6 +80,7 @@
     <Compile Include="Services\Admin\DepartmentService.cs" />
     <Compile Include="Services\Admin\SectionService.cs" />
     <Compile Include="Services\Admin\StudentService.cs" />
+    <Compile Include="Services\Student\StudentService.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DAL\DAL.csproj">
@@ -90,8 +91,6 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Services\Student\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
