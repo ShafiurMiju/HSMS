@@ -12,3 +12,17 @@ D:\ASP.NET\HSMS(Backend)\BLL\obj\Debug\BLL.dll
 D:\ASP.NET\HSMS(Backend)\BLL\obj\Debug\BLL.pdb
 D:\ASP.NET\HSMS(Backend)\BLL\bin\Debug\AutoMapper.dll
 D:\ASP.NET\HSMS(Backend)\BLL\bin\Debug\AutoMapper.xml
+D:\New folder\HSMS\HSMS(Backend)\BLL\bin\Debug\BLL.dll
+D:\New folder\HSMS\HSMS(Backend)\BLL\bin\Debug\BLL.pdb
+D:\New folder\HSMS\HSMS(Backend)\BLL\bin\Debug\AutoMapper.dll
+D:\New folder\HSMS\HSMS(Backend)\BLL\bin\Debug\DAL.dll
+D:\New folder\HSMS\HSMS(Backend)\BLL\bin\Debug\EntityFramework.dll
+D:\New folder\HSMS\HSMS(Backend)\BLL\bin\Debug\DAL.pdb
+D:\New folder\HSMS\HSMS(Backend)\BLL\bin\Debug\DAL.dll.config
+D:\New folder\HSMS\HSMS(Backend)\BLL\bin\Debug\AutoMapper.xml
+D:\New folder\HSMS\HSMS(Backend)\BLL\bin\Debug\EntityFramework.xml
+D:\New folder\HSMS\HSMS(Backend)\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+D:\New folder\HSMS\HSMS(Backend)\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+D:\New folder\HSMS\HSMS(Backend)\BLL\obj\Debug\BLL.csproj.CopyComplete
+D:\New folder\HSMS\HSMS(Backend)\BLL\obj\Debug\BLL.dll
+D:\New folder\HSMS\HSMS(Backend)\BLL\obj\Debug\BLL.pdb

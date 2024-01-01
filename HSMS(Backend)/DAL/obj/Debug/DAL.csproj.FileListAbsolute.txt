@@ -10,3 +10,17 @@ D:\ASP.NET\HSMS(Backend)\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
 D:\ASP.NET\HSMS(Backend)\DAL\obj\Debug\DAL.csproj.CopyComplete
 D:\ASP.NET\HSMS(Backend)\DAL\obj\Debug\DAL.dll
 D:\ASP.NET\HSMS(Backend)\DAL\obj\Debug\DAL.pdb
+D:\New folder\HSMS\HSMS(Backend)\DAL\bin\Debug\DAL.dll.config
+D:\New folder\HSMS\HSMS(Backend)\DAL\bin\Debug\DAL.dll
+D:\New folder\HSMS\HSMS(Backend)\DAL\bin\Debug\DAL.pdb
+D:\New folder\HSMS\HSMS(Backend)\DAL\bin\Debug\EntityFramework.dll
+D:\New folder\HSMS\HSMS(Backend)\DAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\New folder\HSMS\HSMS(Backend)\DAL\bin\Debug\EntityFramework.xml
+D:\New folder\HSMS\HSMS(Backend)\DAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\New folder\HSMS\HSMS(Backend)\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+D:\New folder\HSMS\HSMS(Backend)\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\New folder\HSMS\HSMS(Backend)\DAL\obj\Debug\DAL.csproj.CopyComplete
+D:\New folder\HSMS\HSMS(Backend)\DAL\obj\Debug\DAL.dll
+D:\New folder\HSMS\HSMS(Backend)\DAL\obj\Debug\DAL.pdb
+D:\New folder\HSMS\HSMS(Backend)\DAL\obj\Debug\DAL.Migrations.TableCreate.resources
+D:\New folder\HSMS\HSMS(Backend)\DAL\obj\Debug\DAL.csproj.GenerateResource.cache
