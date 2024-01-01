@@ -39,5 +39,38 @@ namespace BLL.Services
 
             return mapper.Map<StudentDTO>(data);
         }
+
+        public static bool Post(StudentDTO c)
+        {
+            var confiq = new MapperConfiguration(cfg =>
+            {
+                cfg.CreateMap<StudentDTO, Student>();
+            });
+
+            var mapper = new Mapper(confiq);
+
+            var data = mapper.Map<Student>(c);
+
+            return DataAccessFactory.StudentData().Post(data);
+        }
+
+        public static bool Update(StudentDTO c)
+        {
+            var confiq = new MapperConfiguration(cfg =>
+            {
+                cfg.CreateMap<StudentDTO, Student>();
+            });
+
+            var mapper = new Mapper(confiq);
+
+            var data = mapper.Map<Student>(c);
+
+            return DataAccessFactory.StudentData().Update(data);
+        }
+
+        public static bool Delete(int id)
+        {
+            return DataAccessFactory.StudentData().Delete(id);
+        }
     }
 }
