@@ -81,33 +81,33 @@
     <Compile Include="Interfaces\IAdmin.cs" />
     <Compile Include="Interfaces\IAuth.cs" />
     <Compile Include="Interfaces\IRepo.cs" />
-    <Compile Include="Migrations\202401011810303_TableCreate.cs" />
-    <Compile Include="Migrations\202401011810303_TableCreate.designer.cs">
-      <DependentUpon>202401011810303_TableCreate.cs</DependentUpon>
+    <Compile Include="Interfaces\ISearch.cs" />
+    <Compile Include="Migrations\202401012321192_StudentTableUpdate.cs" />
+    <Compile Include="Migrations\202401012321192_StudentTableUpdate.designer.cs">
+      <DependentUpon>202401012321192_StudentTableUpdate.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repos\ReposAdmin\AdminRepo.cs" />
-    <Compile Include="Repos\ReposAdmin\ClassRepo.cs" />
-    <Compile Include="Repos\ReposAdmin\DepartmentRepo.cs" />
-    <Compile Include="Repos\ReposAdmin\StudentDTO.cs" />
-    <Compile Include="Repos\ReposAdmin\TeacherRepo.cs" />
+    <Compile Include="Repos\ReposAdmin\AClassRepo.cs" />
+    <Compile Include="Repos\ReposAdmin\ADepartmentRepo.cs" />
+    <Compile Include="Repos\ReposAdmin\ATeacherRepo.cs" />
+    <Compile Include="Repos\ReposAdmin\SNoteRepo.cs" />
+    <Compile Include="Repos\ReposAdmin\STeacherStudentChatRepo.cs" />
     <Compile Include="Repos\ReposAdmin\TokenRepo.cs" />
     <Compile Include="Repos\Repo.cs" />
-    <Compile Include="Repos\ReposAdmin\SectionRepo.cs" />
-    <Compile Include="Repos\ReposAdmin\StudentRepo.cs" />
-    <Compile Include="Repos\RepoStudent\StudentRepo.cs" />
+    <Compile Include="Repos\ReposAdmin\ASectionRepo.cs" />
+    <Compile Include="Repos\ReposAdmin\AStudentRepo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202401011810303_TableCreate.resx">
-      <DependentUpon>202401011810303_TableCreate.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202401012321192_StudentTableUpdate.resx">
+      <DependentUpon>202401012321192_StudentTableUpdate.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
