@@ -154,3 +154,13 @@ D:\New folder\HSMS\HSMS(Backend)\AL\obj\Debug\AL.csproj.CoreCompileInputs.cache
 D:\New folder\HSMS\HSMS(Backend)\AL\obj\Debug\AL.csproj.CopyComplete
 D:\New folder\HSMS\HSMS(Backend)\AL\obj\Debug\AL.dll
 D:\New folder\HSMS\HSMS(Backend)\AL\obj\Debug\AL.pdb
+D:\ASP.NET\HSMS(Backend)\AL\bin\BCrypt.Net-Next.dll
+D:\ASP.NET\HSMS(Backend)\AL\bin\System.Memory.dll
+D:\ASP.NET\HSMS(Backend)\AL\bin\System.Numerics.Vectors.dll
+D:\ASP.NET\HSMS(Backend)\AL\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\ASP.NET\HSMS(Backend)\AL\bin\System.Buffers.dll
+D:\ASP.NET\HSMS(Backend)\AL\bin\BCrypt.Net-Next.xml
+D:\ASP.NET\HSMS(Backend)\AL\bin\System.Memory.xml
+D:\ASP.NET\HSMS(Backend)\AL\bin\System.Numerics.Vectors.xml
+D:\ASP.NET\HSMS(Backend)\AL\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\ASP.NET\HSMS(Backend)\AL\bin\System.Buffers.xml
