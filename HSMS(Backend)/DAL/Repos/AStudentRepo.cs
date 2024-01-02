@@ -11,23 +11,13 @@ using System.Threading.Tasks;
 
 namespace DAL.Repos
 {
-    internal class AStudentRepo : Repo, IRepo<Student, int, bool>, ISearch<bool, string>
+    internal class AStudentRepo : Repo, IRepo<Student, int, bool>, ISearch<bool, string>, IStudent
     {
         public bool Delete(int id)
         {
-            var ex = DataAccessFactory.AStudentData().Get(id);
-
-            Debugger.Break();
-
+            var ex = Get(id);
             db.Students.Remove(ex);
-            Debugger.Break();
-
-            if (db.SaveChanges() > 0)
-            {
-                return true;
-            }
-
-            return false;
+            return db.SaveChanges() > 0;
         }
 
         public List<Student> Get()
@@ -58,14 +48,22 @@ namespace DAL.Repos
 
         public bool Update(Student obj)
         {
-            var ex = DataAccessFactory.AStudentData().Get(obj.ID);
+            var ex = Get(obj.ID);
+            if(ex == null) return false;
 
             db.Entry(ex).CurrentValues.SetValues(obj);
 
-            if (db.SaveChanges() > 0){
-                return true;
-            }
+            if (db.SaveChanges() > 0) return true;
             return false;
         }
+
+        public List<Student> GetByClassAndSection(int classId, int sectionId)
+        {
+            return db.Students.Where(s => s.ClassID == classId && s.SectionID == sectionId).ToList();
+        }
+
+ 
+
+       
     }
 }

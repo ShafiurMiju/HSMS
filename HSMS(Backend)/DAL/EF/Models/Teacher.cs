@@ -40,7 +40,7 @@ namespace DAL.EF.Models
         public string Education { get; set; }
 
         [Required]
-        [StringLength(20)]
+        [StringLength(200)]
         public string Password { get; set; }
         public string ProfilePicture { get; set; }
 

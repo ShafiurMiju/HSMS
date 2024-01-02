@@ -26,3 +26,4 @@ D:\New folder\HSMS\HSMS(Backend)\DAL\obj\Debug\DAL.Migrations.TableCreate.resour
 D:\New folder\HSMS\HSMS(Backend)\DAL\obj\Debug\DAL.csproj.GenerateResource.cache
 D:\ASP.NET\HSMS(Backend)\DAL\obj\Debug\DAL.Migrations.StudentTableUpdate.resources
 D:\ASP.NET\HSMS(Backend)\DAL\obj\Debug\DAL.csproj.GenerateResource.cache
+D:\ASP.NET\HSMS(Backend)\DAL\obj\Debug\DAL.Migrations.refresh.resources
