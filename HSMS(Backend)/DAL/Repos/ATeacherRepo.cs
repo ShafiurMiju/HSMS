@@ -13,16 +13,9 @@ namespace DAL.Repos.Admin
     {
         public bool Delete(int id)
         {
-            var ex = DataAccessFactory.ATeacherData().Get(id);
-
+            var ex = Get(id);
             db.Teachers.Remove(ex);
-
-            if (db.SaveChanges() > 0)
-            {
-                return true;
-            }
-
-            return false;
+            return db.SaveChanges() > 0;
         }
 
         public List<Teacher> Get()
@@ -38,8 +31,14 @@ namespace DAL.Repos.Admin
         public bool Post(Teacher obj)
         {
             db.Teachers.Add(obj);
-            if (db.SaveChanges() > 0) return true;
-            return false;
+            return db.SaveChanges() > 0;
+        }
+
+        public bool Update(Teacher obj)
+        {
+            var ex = Get(obj.ID);
+            db.Entry(ex).CurrentValues.SetValues(obj);
+            return db.SaveChanges() > 0;
         }
 
         public bool Search(string data)
@@ -50,19 +49,5 @@ namespace DAL.Repos.Admin
             return false;
 
         }
-
-        public bool Update(Teacher obj)
-        {
-            var ex = DataAccessFactory.ATeacherData().Get(obj.ID);
-
-            db.Entry(ex).CurrentValues.SetValues(obj);
-
-            if (db.SaveChanges() > 0)
-            {
-                return true;
-            }
-            return false;
-        }
-
     }
 }

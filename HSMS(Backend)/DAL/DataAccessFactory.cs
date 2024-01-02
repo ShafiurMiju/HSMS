@@ -33,6 +33,21 @@ namespace DAL
             return new AClassRepo();
         }
 
+        public static IRepo<SchoolInfo, int, bool> SchoolInfoData()
+        {
+            return new SchoolInfoRepo();
+        }
+
+        public static IRepo<Grade, int, bool> GradeData()
+        {
+            return new AGradeRepo();
+        }
+
+        public static IRepo<Subject, int, bool> SubjectData()
+        {
+            return new ASubjectRepo();
+        }
+
         public static IRepo<Section, int, bool> SectionData()
         {
             return new ASectionRepo();
@@ -53,6 +68,11 @@ namespace DAL
             return new TokenRepo();
         }
 
+        public static IRepo<ExamType, int, bool> ExamTypeData()
+        {
+            return new AExamTypeRepo();
+        }
+
         public static ISearch<bool, string>SearchData()
         {
             return new AStudentRepo();
@@ -71,6 +91,36 @@ namespace DAL
         public static IRepo<Note, int, bool> NoteData()
         {
             return new SNoteRepo();
+        }
+
+        public static IRepo<Staff, int, bool> StaffData()
+        {
+            return new StaffRepo();
+        }
+
+        public static IRepo<SubjectTeacher, int, bool> SubjectTeacherData()
+        {
+            return new SubjectTeacherRepo();
+        }
+
+        public static IStudent AStudentCountData()
+        {
+            return new AStudentRepo();
+        }
+
+        public static IRepo<Exam, int, bool> ExamData()
+        {
+            return new ExamRepo();
+        }
+
+        public static IRepo<Result, int, bool> ResultData()
+        {
+            return new ResultRepo();
+        }
+
+        public static IResult<Result, int> StudentResultData()
+        {
+            return new ResultRepo();
         }
     }
 }

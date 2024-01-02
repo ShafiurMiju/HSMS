@@ -1,16 +1,14 @@
-﻿using BLL.DTOs;
-using BLL.Services;
-using BLL.Services.ServiceAdmin;
-using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using BLL.DTOs;
+using BLL.Services;
+using BLL.Services.ServiceAdmin;
 
-namespace AL.Controllers.ControllerAdmin
+namespace YourNamespace.Controllers
 {
-    public class ATeacherController : ApiController
+    public class TeacherController : ApiController
     {
         [HttpGet]
         [Route("api/teacher")]
@@ -43,18 +41,32 @@ namespace AL.Controllers.ControllerAdmin
         }
 
         [HttpPost]
-        [Route("api/teacher/create")]
-        public HttpResponseMessage Post(TeacherDTO s)
+        [Route("api/teacher")]
+        public HttpResponseMessage Post(TeacherDTO teacherDTO)
         {
-
             try
             {
-                var data = ATeacherService.Post(s);
+                var data = ATeacherService.Post(teacherDTO);
+                return Request.CreateResponse(HttpStatusCode.Created, data);
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateErrorResponse(HttpStatusCode.InternalServerError, ex.Message);
+            }
+        }
+
+        [HttpPut]
+        [Route("api/teacher")]
+        public HttpResponseMessage Update(TeacherDTO teacherDTO)
+        {
+            try
+            {
+                var data = ATeacherService.Update(teacherDTO);
                 return Request.CreateResponse(HttpStatusCode.OK, data);
             }
             catch (Exception ex)
             {
-                return Request.CreateErrorResponse(HttpStatusCode.NotFound, ex.Message);
+                return Request.CreateErrorResponse(HttpStatusCode.InternalServerError, ex.Message);
             }
         }
 
@@ -65,21 +77,6 @@ namespace AL.Controllers.ControllerAdmin
             try
             {
                 var data = ATeacherService.Delete(id);
-                return Request.CreateResponse(HttpStatusCode.OK, data);
-            }
-            catch (Exception ex)
-            {
-                return Request.CreateErrorResponse(HttpStatusCode.InternalServerError, ex.Message);
-            }
-        }
-
-        [HttpPut]
-        [Route("api/teacher/update")]
-        public HttpResponseMessage Update(TeacherDTO d)
-        {
-            try
-            {
-                var data = ATeacherService.Update(d);
                 return Request.CreateResponse(HttpStatusCode.OK, data);
             }
             catch (Exception ex)

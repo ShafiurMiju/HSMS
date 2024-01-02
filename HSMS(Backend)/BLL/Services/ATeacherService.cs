@@ -13,92 +13,62 @@ namespace BLL.Services.ServiceAdmin
 {
     public class ATeacherService
     {
+        private static IMapper _mapper;
+
+        static ATeacherService()
+        {
+            var config = new MapperConfiguration(cfg =>
+            {
+                cfg.CreateMap<Teacher, TeacherDTO>();
+                cfg.CreateMap<TeacherDTO, Teacher>();
+            });
+
+            _mapper = config.CreateMapper();
+        }
+
         public static List<TeacherDTO> Get()
         {
             var data = DataAccessFactory.ATeacherData().Get();
-
-            var confiq = new MapperConfiguration(cfg =>
-            {
-                cfg.CreateMap<Teacher, TeacherDTO>();
-            });
-
-            var mapper = new Mapper(confiq);
-
-            return mapper.Map<List<TeacherDTO>>(data);
+            return _mapper.Map<List<TeacherDTO>>(data);
         }
 
         public static TeacherDTO Get(int id)
         {
             var data = DataAccessFactory.ATeacherData().Get(id);
-
-            var confiq = new MapperConfiguration(cfg =>
-            {
-                cfg.CreateMap<Teacher, TeacherDTO>();
-            });
-
-            var mapper = new Mapper(confiq);
-
-            return mapper.Map<TeacherDTO>(data);
+            return _mapper.Map<TeacherDTO>(data);
         }
 
         public static object Post(TeacherDTO c)
         {
-
-
-            var email = c.Email;
-
-            var exemail = DataAccessFactory.TSearchData().Search(email);
-
-
-            if (!exemail)
-            {
-                var confiq = new MapperConfiguration(cfg =>
-                {
-                    cfg.CreateMap<TeacherDTO, Teacher>();
-                });
-
-                var mapper = new Mapper(confiq);
-
-                var data = mapper.Map<Teacher>(c);
-
-                string pattern = @"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^\da-zA-Z]).{8,20}$";
-
-                Regex regex = new Regex(pattern);
-
-                if (regex.IsMatch(data.Password) == true)
-                {
-                    string salt = BCrypt.Net.BCrypt.GenerateSalt();
-                    string hashedPassword = BCrypt.Net.BCrypt.HashPassword(data.Password, salt);
-                    data.Password = hashedPassword;
-                }
-                else
-                {
-                    return new { Message = "At least one lowercase letter, one uppercase letter, one digit, one special character && Minimum length of 8 characters" };
-                }
-
-                return DataAccessFactory.ATeacherData().Post(data);
-            }
-
-            else
+            if (DataAccessFactory.TSearchData().Search(c.Email))
             {
                 return new { Message = "Email Exist" };
             }
+            var data = _mapper.Map<Teacher>(c);
 
+            string pattern = @"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^\da-zA-Z]).{8,20}$";
+
+            Regex regex = new Regex(pattern);
+
+            if (regex.IsMatch(data.Password) == true)
+            {
+                string salt = BCrypt.Net.BCrypt.GenerateSalt();
+                string hashedPassword = BCrypt.Net.BCrypt.HashPassword(data.Password, salt);
+                data.Password = hashedPassword;
+            }
+            else
+            {
+                return new { Message = "At least one lowercase letter, one uppercase letter, one digit, one special character && Minimum length of 8 characters" };
+            }
+
+            return DataAccessFactory.ATeacherData().Post(data);
 
         }
 
-        public static bool Update(TeacherDTO c)
+        public static bool Update(TeacherDTO teacherDTO)
         {
-            var confiq = new MapperConfiguration(cfg =>
-            {
-                cfg.CreateMap<TeacherDTO, Teacher>();
-            });
-
-            var mapper = new Mapper(confiq);
-
-            var data = mapper.Map<Teacher>(c);
-
-            return DataAccessFactory.ATeacherData().Update(data);
+            var teacher = _mapper.Map<Teacher>(teacherDTO);
+            return DataAccessFactory.ATeacherData().Update(teacher);
         }
 
         public static bool Delete(int id)

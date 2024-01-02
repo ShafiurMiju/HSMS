@@ -16,6 +16,7 @@ namespace BLL.DTOs
 
         public string Email { get; set; }
 
+        public string ContactNumber { get; set; }
 
         public DateTime DateOfBirth { get; set; }
 

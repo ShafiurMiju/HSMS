@@ -12,59 +12,40 @@ namespace BLL.Services
 {
     public class AClassService
     {
-        public static List<ClassDTO> Get()
-        {
-            var data = DataAccessFactory.ClassData().Get();
-
+        private static IMapper _mapper;
+        static AClassService() {
             var confiq = new MapperConfiguration(cfg =>
             {
                 cfg.CreateMap<Class, ClassDTO>();
+                cfg.CreateMap<ClassDTO, Class>();
+                cfg.CreateMap<Class, ClassStudentDTO>();
+                cfg.CreateMap<Student, StudentDTO>();
             });
 
-            var mapper = new Mapper(confiq);
+            _mapper = new Mapper(confiq);
+        }
 
-            return mapper.Map<List<ClassDTO>>(data);
+        public static List<ClassDTO> Get()
+        {
+            var data = DataAccessFactory.ClassData().Get();
+            return _mapper.Map<List<ClassDTO>>(data);
         }
 
         public static ClassDTO Get(int id)
         {
             var data = DataAccessFactory.ClassData().Get(id);
-
-            var confiq = new MapperConfiguration(cfg =>
-            {
-                cfg.CreateMap<Class, ClassDTO>();
-            });
-
-            var mapper = new Mapper(confiq);
-
-            return mapper.Map<ClassDTO>(data);
+            return _mapper.Map<ClassDTO>(data);
         }
 
         public static bool Post(ClassDTO c)
         {
-            var confiq = new MapperConfiguration(cfg =>
-            {
-                cfg.CreateMap<ClassDTO, Class>();
-            });
-
-            var mapper = new Mapper(confiq);
-
-            var data = mapper.Map<Class>(c);
-
+            var data = _mapper.Map<Class>(c);
             return DataAccessFactory.ClassData().Post(data);
         }
 
         public static bool Update(ClassDTO c)
         {
-            var confiq = new MapperConfiguration(cfg =>
-            {
-                cfg.CreateMap<ClassDTO, Class>();
-            });
-
-            var mapper = new Mapper(confiq);
-
-            var data = mapper.Map<Class>(c);
-
+            var data = _mapper.Map<Class>(c);
             return DataAccessFactory.ClassData().Update(data);
         }
 
@@ -76,16 +57,7 @@ namespace BLL.Services
         public static ClassDTO GetClassStudent(int id)
         {
             var data = DataAccessFactory.ClassData().Get(id);
-
-            var confiq = new MapperConfiguration(cfg =>
-            {
-                cfg.CreateMap<Class, ClassStudentDTO>();
-                cfg.CreateMap<Student, StudentDTO>();
-            });
-
-            var mapper = new Mapper(confiq);
-
-            return mapper.Map<ClassStudentDTO>(data);
+            return _mapper.Map<ClassStudentDTO>(data);
         }
     }
 }

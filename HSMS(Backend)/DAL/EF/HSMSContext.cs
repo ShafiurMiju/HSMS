@@ -25,11 +25,11 @@ namespace DAL.EF
         public DbSet<Note> Notes { get; set; }
         public DbSet<Notice> Notices { get; set; }
         public DbSet<Result> Results { get; set; }
-        public DbSet<SchoolInfo> SchoolInfos { get; set; }       
+        public DbSet<SchoolInfo> SchoolInfoes { get; set; }       
         public DbSet<Section> Sections { get; set; }
         public DbSet<Staff> Staffs { get; set; }
         public DbSet<Student> Students { get; set; }        
-        public DbSet<Subject> Subject { get; set; }        
+        public DbSet<Subject> Subjects { get; set; }        
         public DbSet<SubjectTeacher> SubjectTeachers { get; set; }        
         public DbSet<Teacher> Teachers { get; set; }        
         public DbSet<TeacherStudentChat> TeacherStudentChats { get; set; }        
