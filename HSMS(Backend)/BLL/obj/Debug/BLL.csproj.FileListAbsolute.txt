@@ -26,3 +26,13 @@ D:\New folder\HSMS\HSMS(Backend)\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cach
 D:\New folder\HSMS\HSMS(Backend)\BLL\obj\Debug\BLL.csproj.CopyComplete
 D:\New folder\HSMS\HSMS(Backend)\BLL\obj\Debug\BLL.dll
 D:\New folder\HSMS\HSMS(Backend)\BLL\obj\Debug\BLL.pdb
+D:\ASP.NET\HSMS(Backend)\BLL\bin\Debug\BCrypt.Net-Next.dll
+D:\ASP.NET\HSMS(Backend)\BLL\bin\Debug\System.Buffers.dll
+D:\ASP.NET\HSMS(Backend)\BLL\bin\Debug\System.Memory.dll
+D:\ASP.NET\HSMS(Backend)\BLL\bin\Debug\System.Numerics.Vectors.dll
+D:\ASP.NET\HSMS(Backend)\BLL\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\ASP.NET\HSMS(Backend)\BLL\bin\Debug\BCrypt.Net-Next.xml
+D:\ASP.NET\HSMS(Backend)\BLL\bin\Debug\System.Buffers.xml
+D:\ASP.NET\HSMS(Backend)\BLL\bin\Debug\System.Memory.xml
+D:\ASP.NET\HSMS(Backend)\BLL\bin\Debug\System.Numerics.Vectors.xml
+D:\ASP.NET\HSMS(Backend)\BLL\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml

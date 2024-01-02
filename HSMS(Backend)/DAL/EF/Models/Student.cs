@@ -47,7 +47,7 @@ namespace DAL.EF.Models
         public string Address { get; set; }
 
         [Required]
-        [StringLength(20)]
+        [StringLength(200)]
         public string Password { get; set; }
 
         [ForeignKey("Class")]
