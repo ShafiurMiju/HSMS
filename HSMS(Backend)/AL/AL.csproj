@@ -94,17 +94,26 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Auth\Logged.cs" />
     <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Controllers\AExamTypeController.cs" />
     <Compile Include="Controllers\ATeacherController.cs" />
     <Compile Include="Controllers\AuthController.cs" />
     <Compile Include="Controllers\AClassController.cs" />
     <Compile Include="Controllers\ADepartmentController.cs" />
     <Compile Include="Controllers\ASectionController.cs" />
     <Compile Include="Controllers\AStudentController.cs" />
+    <Compile Include="Controllers\ExamController.cs" />
+    <Compile Include="Controllers\GradeController.cs" />
+    <Compile Include="Controllers\NoteController.cs" />
+    <Compile Include="Controllers\ResultController.cs" />
+    <Compile Include="Controllers\SchoolInfoController.cs" />
     <Compile Include="Controllers\SClassController.cs" />
     <Compile Include="Controllers\SNoteController.cs" />
     <Compile Include="Controllers\SSectionController.cs" />
     <Compile Include="Controllers\SStudentController.cs" />
+    <Compile Include="Controllers\StaffController.cs" />
     <Compile Include="Controllers\STeacheStudentChatsController.cs" />
+    <Compile Include="Controllers\ASubjectController.cs" />
+    <Compile Include="Controllers\SubjectTeacherController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>

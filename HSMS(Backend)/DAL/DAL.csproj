@@ -80,24 +80,40 @@
     <Compile Include="EF\Models\Token.cs" />
     <Compile Include="Interfaces\IAdmin.cs" />
     <Compile Include="Interfaces\IAuth.cs" />
+    <Compile Include="Interfaces\IDelete.cs" />
     <Compile Include="Interfaces\IRepo.cs" />
+    <Compile Include="Interfaces\IResult.cs" />
     <Compile Include="Interfaces\ISearch.cs" />
+    <Compile Include="Interfaces\IStudent.cs" />
     <Compile Include="Migrations\202401012321192_StudentTableUpdate.cs" />
     <Compile Include="Migrations\202401012321192_StudentTableUpdate.designer.cs">
       <DependentUpon>202401012321192_StudentTableUpdate.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202401021722560_refresh.cs" />
+    <Compile Include="Migrations\202401021722560_refresh.designer.cs">
+      <DependentUpon>202401021722560_refresh.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repos\ReposAdmin\AdminRepo.cs" />
-    <Compile Include="Repos\ReposAdmin\AClassRepo.cs" />
-    <Compile Include="Repos\ReposAdmin\ADepartmentRepo.cs" />
-    <Compile Include="Repos\ReposAdmin\ATeacherRepo.cs" />
-    <Compile Include="Repos\ReposAdmin\SNoteRepo.cs" />
-    <Compile Include="Repos\ReposAdmin\STeacherStudentChatRepo.cs" />
-    <Compile Include="Repos\ReposAdmin\TokenRepo.cs" />
+    <Compile Include="Repos\AdminRepo.cs" />
+    <Compile Include="Repos\AClassRepo.cs" />
+    <Compile Include="Repos\ADepartmentRepo.cs" />
+    <Compile Include="Repos\AExamTypeRepo.cs" />
+    <Compile Include="Repos\ATeacherRepo.cs" />
+    <Compile Include="Repos\AGradeRepo.cs" />
+    <Compile Include="Repos\ExamRepo.cs" />
+    <Compile Include="Repos\NoteRepo.cs" />
+    <Compile Include="Repos\ResultRepo.cs" />
+    <Compile Include="Repos\SchoolInfoRepo.cs" />
+    <Compile Include="Repos\SNoteRepo.cs" />
+    <Compile Include="Repos\StaffRepo.cs" />
+    <Compile Include="Repos\STeacherStudentChatRepo.cs" />
+    <Compile Include="Repos\ASubjectRepo.cs" />
+    <Compile Include="Repos\SubjectTeacherRepo.cs" />
+    <Compile Include="Repos\TokenRepo.cs" />
     <Compile Include="Repos\Repo.cs" />
-    <Compile Include="Repos\ReposAdmin\ASectionRepo.cs" />
-    <Compile Include="Repos\ReposAdmin\AStudentRepo.cs" />
+    <Compile Include="Repos\ASectionRepo.cs" />
+    <Compile Include="Repos\AStudentRepo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -106,6 +122,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202401012321192_StudentTableUpdate.resx">
       <DependentUpon>202401012321192_StudentTableUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202401021722560_refresh.resx">
+      <DependentUpon>202401021722560_refresh.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
